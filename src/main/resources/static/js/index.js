@@ -18,7 +18,7 @@ var udd = "http://localhost:8080/test";
 var udd2 = "http://localhost:8080/test2";
 function test(dd,ff) {
     $.ajax({
-        type:"POST",
+        type:"GET",
         url:udd,
         data:{
             k:dd
