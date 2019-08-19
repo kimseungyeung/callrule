@@ -1,4 +1,5 @@
 
+
 $(document).ready(function(){
 
 //사용자 정의함수들.
@@ -104,9 +105,14 @@ var options = {
             'stringType': 'Field type "string". Field type is not determined from the value, but always returned as string.'
         }
     },
-    language: window.lang
 
 };
-var editor= null;
-var contatiner=document.getElementsByClassName("editor");
-editor =json(contatiner,options);
+
+
+$(function() {
+    var contatiner=document.getElementById('editor_holder');
+    // console.log('xxx', contatiner.is('*'));
+    var editor = new JSONEditor(contatiner,{});
+
+    // editor.enable();
+});
