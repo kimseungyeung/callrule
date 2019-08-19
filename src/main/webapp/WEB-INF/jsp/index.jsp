@@ -21,6 +21,6 @@
 룰이름: <input id="edit" type="text" name="submit" size="13">
 룰값: <input id="edit2" type="text" name="submit" size="13">
 <div id="btt"><button type="button" class="btn btn-primary" id="bt">실행</button></div>
-
+<div class="editor"></div>
 </body>
 </html>

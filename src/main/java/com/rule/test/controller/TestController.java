@@ -20,14 +20,14 @@ public class TestController {
         return "index";
     }
     //db가져오기
-    @RequestMapping(path = "/test" , method = RequestMethod.POST)
+    @RequestMapping(path = "/test" , method = RequestMethod.GET)
     @ResponseBody
     public String test(@RequestParam String k) {
         String dd="";
        try{
-           String jdbcurl ="jdbc:mysql://10.167.107.125:3306/test?useUnicode=true&serverTimezone=UTC";
+           String jdbcurl ="jdbc:mysql://hidayz.com:3306/hk_rcube?useUnicode=true&serverTimezone=UTC";
            String username="root";
-           String pasword="tmddud";
+           String pasword="hidayz1004";
 
            conn= DriverManager.getConnection(jdbcurl,username,pasword);
            state=conn.createStatement();
@@ -40,7 +40,7 @@ public class TestController {
 
         return dd;
     }
-    @RequestMapping(path = "/test2" , method = RequestMethod.POST)
+    @RequestMapping(path = "/test2" , method = RequestMethod.GET)
     @ResponseBody
     public String test2(@RequestParam String k) {
         String dd=k+"입니다.";
