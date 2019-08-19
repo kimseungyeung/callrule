@@ -136,12 +136,7 @@ function test(e) {
     }).done(function (html) {
 
 
-        alert(html);
-        var hh =html.replace("룰 흐름도","");
-        hh.replace("메인플로우","");
-        hh.replace("시작","");
-        hh.replace("룰","");
-        hh.replace("종료","");
+       // alert(html);
         $("#result").html(hh);
         $('#result').width(1000);
         $('#result').height(500);
