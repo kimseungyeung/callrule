@@ -108,7 +108,7 @@ var options = {
 
 };
 
-
+//uk
 $(function() {
     var contatiner=document.getElementById('editor_holder');
     // console.log('xxx', contatiner.is('*'));
