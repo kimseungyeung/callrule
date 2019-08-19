@@ -3,9 +3,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min-jsf.css">
+<link href="\webjars\jsoneditor\dist\jsoneditor.css" rel="stylesheet" type="text/css">
 <script src="/webjars/jquery/3.4.1/jquery.js"></script>
 <script  src="/webjars/bootstrap/4.3.1/js/bootstrap.js"></script>
-<script src="/webjars/json-editor/0.7.21/jsoneditor.js"></script>
+<script src="\webjars\jsoneditor\dist\jsoneditor.js"></script>
 
 
 <link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min-jsf.css">
@@ -18,10 +19,10 @@
 </head>
 <body>
 <div class='name'><h1>${name}</h1></div>
-룰이름: <input id="edit" type="text" name="submit" size="13">
-룰값: <input id="edit2" type="text" name="submit" size="13">
+
+<div id="editor_holder" style="width: 1000px;height: 500px;" ></div>
 <div id="btt"><button type="button" class="btn btn-primary" id="bt">실행</button></div>
-<div id="editor_holder"></div>
 <script type="text/javascript" src="resources/js/index.js"></script>
+<div id="result"></div>
 </body>
 </html>

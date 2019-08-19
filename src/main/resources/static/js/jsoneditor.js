@@ -1,1 +1,1 @@
-module.exports = require("/webjars/json-editor/0.7.21/jsoneditor.js");
+module.exports = require("webjars/soneditor/dist/jsoneditor.js");

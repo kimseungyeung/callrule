@@ -1,14 +1,11 @@
 
-
+var editor=null;
 $(document).ready(function(){
 
 //사용자 정의함수들.
 
     $("#bt").click(function () {
-        var text=$('#edit').val();
-        var value=$('#edit2').val();
-       // alert(text);
-        test(text,value);
+        test();
     });
 
 
@@ -17,24 +14,21 @@ $(document).ready(function(){
 
 });
 var udd = "http://localhost:8080/test";
+document.addEventListener("paste", function(e) {
+    e.preventDefault();
 
-function test(dd,ff) {
-    $.ajax({
-        type:"GET",
-        url:udd,
-        data:{
-            k:dd
-        },
+    var x = $(e.target).is("input");
 
-        datatype:"json",
-        success:function(t){
+    if (!x) {
+        e.stopPropagation();
 
-                alert(t);
+        var text = e.clipboardData.getData("text/plain");
+        var json = $.parseJSON(text);
+        editor.set(json);
 
-        },error:function(){
-         alert("연결실패");
-        }
-    })}
+    }
+});
+
 var options = {
     modes: ['code', 'tree'],
     mode: 'tree',
@@ -108,11 +102,51 @@ var options = {
 
 };
 
-//uk
+
 $(function() {
     var contatiner=document.getElementById('editor_holder');
     // console.log('xxx', contatiner.is('*'));
-    var editor = new JSONEditor(contatiner,{});
+     editor = new JSONEditor(contatiner,options);
 
     // editor.enable();
 });
+function test(e) {
+    var json = editor.get();
+
+
+
+    var url = null;
+
+
+    url = "http://hidayz.com/rcube/api/rule/generic/execute?target=3b181848-6830-4187-be84-f39375215423";
+
+    console.log(url);
+
+
+    $.ajax({
+        url: url,
+        type: "POST",
+        contentType: "text/plain",
+        processData: false,
+        data: JSON.stringify(json),
+        dataType: "text",
+    }).always(function () {
+
+
+    }).done(function (html) {
+
+
+        alert(html);
+        var hh =html.replace("룰 흐름도","");
+        hh.replace("메인플로우","");
+        hh.replace("시작","");
+        hh.replace("룰","");
+        hh.replace("종료","");
+        $("#result").html(hh);
+        $('#result').width(1000);
+        $('#result').height(500);
+
+    }).fail(function () {
+        alert("실행 실패");
+    });
+}
