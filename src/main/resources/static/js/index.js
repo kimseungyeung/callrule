@@ -107,7 +107,7 @@ $(function() {
     var contatiner=document.getElementById('editor_holder');
     // console.log('xxx', contatiner.is('*'));
      editor = new JSONEditor(contatiner,options);
-
+h
     // editor.enable();
 });
 function test(e) {
@@ -137,7 +137,7 @@ function test(e) {
 
 
        // alert(html);
-        $("#result").html(hh);
+        $("#result").html(html);
         $('#result').width(1000);
         $('#result').height(500);
 
