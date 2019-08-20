@@ -156,27 +156,27 @@ function test() {
 
     var options={
         "Claim": {
-            "other_money2": ed1,
+            "otherMoney2": ed1,
             "country": ed2,
-            "other_money": ed3,
-            "my_money": ed4,
+            "otherMoney": ed3,
+            "my_Money": ed4,
             "accdDate":  ed5,
-            "HSP_ST_DT": ed6,
+            "hspStDt": ed6,
             "count":  ed7,
-            "HSP_END_DT":  ed8,
-            "CLM_DT": ed9,
+            "hspEndDt":  ed8,
+            "clmDt": ed9,
             "money": ed10,
-            "SS":  ed11,
+            "ss":  ed11,
             "money1y": ed12
         },"Contract":{
-            "pgcode":ed13,
+            "pgCode":ed13,
             "code":  ed14,
             "type":  ed15,
             "sss":  ed16,
             "sdff":  ed17,
             "sss1":  ed18
         },"Diagnosis":{
-            "hsp_code": ed19,
+            "hspCode": ed19,
             "code":  ed20,
             "yn":  ed21
         },"Insured":{
@@ -185,8 +185,8 @@ function test() {
             "cancer":  ed24,
             "age": ed25
         }, "Pay":{
-            "sub_code": ed26,
-            "main_code":ed27
+            "subCode": ed26,
+            "mainCode":ed27
         }
 
     };
@@ -206,7 +206,7 @@ function test() {
     $.ajax({
         url: url,
         type: "POST",
-        contentType: "application/json",
+        contentType: "text/plain",
         processData: false,
         data: JSON.stringify(json),
         dataType: "json",
@@ -217,7 +217,7 @@ function test() {
 
 
        // alert(html);
-        $("#result").insert(result.toString());
+        $("#result").text(JSON.stringify(result));
 
 
     }).fail(function () {
