@@ -3,16 +3,17 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min-jsf.css">
-<link href="\webjars\jsoneditor\dist\jsoneditor.css" rel="stylesheet" type="text/css">
+<link href="/webjars/jsoneditor/dist/jsoneditor.css" rel="stylesheet" type="text/css">
 <script src="/webjars/jquery/3.4.1/jquery.js"></script>
 <script  src="/webjars/bootstrap/4.3.1/js/bootstrap.js"></script>
-<script src="\webjars\jsoneditor\dist\jsoneditor.js"></script>
+<script src="/webjars/jsoneditor/dist/jsoneditor.js"></script>
 
 
-<link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min-jsf.css">
+<link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min-jsf.css"/>
 
 <html>
-
+<link rel="stylesheet/less" type="text/css" href="resources/css/index.less"/>
+<script  src="/webjars/less/3.8.1/less.js"></script>
 
 <head>
     <title>룰 호출 페이지</title>
@@ -21,9 +22,9 @@
 <div class='name'><h1>${name}</h1></div>
 
 <div id="editor_holder" >
-    <p><div >공단부담금액 : <input id="edt_1" type="number" value=""></div></p>
-    <p><div >국가코드    : <input id="edt_2" type="text" value=""></div></p>
-    <p><div>급여본인부담:   <input  id="edt_3"type="number" value=""></div></p>
+    <p><div >공단부담금액:<input id="edt_1" type="number" value=""></div></p>
+    <p><div >국가코드:<input id="edt_2" type="text" value=""></div></p>
+    <p><div>급여본인부담:<input  id="edt_3"type="number" value=""></div></p>
     <p><div >본인부담금액:<input id="edt_4" type="number" value=""></div></p>
    <p><div >사고발생일자:<input id="edt_5"type="text" value=""></div></p>
    <p> <div >입원시작일자:<input id="edt_6"type="text" value=""></div></p>
@@ -51,6 +52,7 @@
 </div>
 <div id="btt"><button type="button" class="btn btn-primary" id="bt">실행</button></div>
 <script type="text/javascript" src="resources/js/index.js"></script>
-<div id="result"></div>
+<div id="result">결과:없음</div>
+
 </body>
 </html>

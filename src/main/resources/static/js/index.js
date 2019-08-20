@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 
 
- $('.name').text("dddfsdfdsf");
+ $('.name').text("룰 호출 데이터 입력");
 
 });
 var udd = "http://localhost:8080/test";
@@ -30,11 +30,12 @@ document.addEventListener("paste", function(e) {
             var k= key;
             var ff= json[key];
             $.each(ff,function (key1,value1) {
+                index++;
                 var k1=key1;
                 var v1=value1;
-                var name='#edt_'+(index+1);
+                var name='#edt_'+(index);
                 $(name).val(v1);
-                index++;
+
 
             })
         }); {
@@ -127,16 +128,16 @@ document.addEventListener("paste", function(e) {
 function test() {
     var ed1 =parseInt($('#edt_1').val());
     var ed2 =$('#edt_2').val();
-    var ed3 =$('#edt_3').val();
-    var ed4 =$('#edt_4').val();
+    var ed3 =parseInt($('#edt_3').val());
+    var ed4 =parseInt($('#edt_4').val());
     var ed5 =$('#edt_5').val();
     var ed6 =$('#edt_6').val();
-    var ed7 =$('#edt_7').val();
+    var ed7 =parseInt($('#edt_7').val());
     var ed8 =$('#edt_8').val();
     var ed9 =$('#edt_9').val();
-    var ed10 =$('#edt_10').val();
+    var ed10 =parseInt($('#edt_10').val());
     var ed11 =$('#edt_11').val();
-    var ed12 =$('#edt_12').val();
+    var ed12 =parseInt($('#edt_12').val());
     var ed13 =$('#edt_13').val();
     var ed14 =$('#edt_14').val();
     var ed15 =$('#edt_15').val();
@@ -148,8 +149,8 @@ function test() {
     var ed21 =$('#edt_21').val();
     var ed22 =$('#edt_22').val();
     var ed23 =$('#edt_23').val();
-    var ed24 =$('#edt_24').val();
-    var ed25 =$('#edt_25').val();
+    var ed24 =parseInt($('#edt_24').val());
+    var ed25 =parseInt($('#edt_25').val());
     var ed26 =$('#edt_26').val();
     var ed27 =$('#edt_27').val();
 
@@ -196,7 +197,8 @@ function test() {
     var url = null;
 
 
-    url = "http://hidayz.com/rcube/api/rule/generic/execute?target=3b181848-6830-4187-be84-f39375215423";
+    url = "http://hidayz.com:8080/hk-rcube/test/rule/execute?target=3b181848-6830-4187-be84-f39375215423";
+
 
     console.log(url);
 
@@ -204,20 +206,19 @@ function test() {
     $.ajax({
         url: url,
         type: "POST",
-        contentType: "text/plain",
+        contentType: "application/json",
         processData: false,
         data: JSON.stringify(json),
-        dataType: "text",
+        dataType: "json",
     }).always(function () {
 
 
-    }).done(function (html) {
+    }).done(function (result) {
 
 
        // alert(html);
-        $("#result").html(html);
-        $('#result').width(1000);
-        $('#result').height(500);
+        $("#result").insert(result.toString());
+
 
     }).fail(function () {
         alert("실행 실패");
