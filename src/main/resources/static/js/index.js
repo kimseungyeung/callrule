@@ -79,7 +79,7 @@ function test() {
             "otherMoney2": ed1,
             "country": ed2,
             "otherMoney": ed3,
-            "myMoney": ed4,
+            "my_Money": ed4,
             "accddate":  ed5,
             "hspStDt": ed6,
             "count":  ed7,
@@ -105,7 +105,7 @@ function test() {
             "cancer":  ed24,
             "age": ed25
         }, "Pay":{
-            "subcode": ed26,
+            "subCode": ed26,
             "mainCode":ed27
         }
 
