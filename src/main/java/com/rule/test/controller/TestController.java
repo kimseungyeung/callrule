@@ -49,15 +49,5 @@ public class TestController {
         return dd;
     }
 
-    public class ba{
-         int k;
-        int c;
-        int d;
-    }
-    public class bb extends ba{
-        public void dd() {
-            super.c=2;
 
-        }
-    }
 }
