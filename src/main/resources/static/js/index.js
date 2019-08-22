@@ -79,7 +79,7 @@ function test() {
             "otherMoney2": ed1,
             "country": ed2,
             "otherMoney": ed3,
-            "my_Money": ed4,
+            "myMoney": ed4,
             "accddate":  ed5,
             "hspStDt": ed6,
             "count":  ed7,
@@ -105,7 +105,7 @@ function test() {
             "cancer":  ed24,
             "age": ed25
         }, "Pay":{
-            "subCode": ed26,
+            "subcode": ed26,
             "mainCode":ed27
         }
 
@@ -117,7 +117,7 @@ function test() {
     var url = null;
 
 
-    url = "http://hidayz.com:8080/hk-rcube/test/rule/execute?target=3b181848-6830-4187-be84-f39375215423";
+    url = "http://localhost:8181/rcube/test/rule/execute?target=d1e5bb99-a3a5-4c84-8f8b-4d22a7351039";
 
 
     console.log(url);

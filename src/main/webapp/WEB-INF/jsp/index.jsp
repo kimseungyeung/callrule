@@ -52,7 +52,7 @@
 </div>
 <div id="btt"><button type="button" class="btn btn-primary" id="bt">실행</button></div>
 <script type="text/javascript" src="resources/js/index.js"></script>
-<div id="result">결과:없음</div>
+<div id="result"><h1>결과:없음</h1></div>
 
 </body>
 </html>
