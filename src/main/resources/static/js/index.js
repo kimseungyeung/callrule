@@ -3,7 +3,8 @@ var editor=null;
 
 $(document).ready(function(){
 
-//사용자 정의함수들.
+//외부서버와 ajax 통신하기 위해서는 서버에 해당 콘트롤러에 crossorigin 설정을 해줘야함 @CROSSORIGIN
+    //그리고 만약 로그인이 필요한 컨텐츠라면 SECURITY 항목에 해당 콘트롤러를 누구나 접근가능하게 보안을 풀어놓아야함
     url = "http://localhost:8181/rcube/test/rule/getslist";
 
 
