@@ -20,7 +20,7 @@
 </head>
 <body>
 <div class='name'><h1>${name}</h1></div>
-
+<select id="select"></select>
 <div id="editor_holder" >
     <p><div >공단부담금액:<input id="edt_1" type="number" value=""></div></p>
     <p><div >국가코드:<input id="edt_2" type="text" value=""></div></p>

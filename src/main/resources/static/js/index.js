@@ -19,7 +19,13 @@ $(document).ready(function(){
 
 
     }).done(function (result) {
-       alert(result.toString());
+        var count =0;
+        $.each(result,function (name,value) {
+            $("#select").append("<option value='"+value+"'>"+name+"</option>");
+
+
+        });
+
 
     }).fail(function () {
         alert("실행 실패");
@@ -135,9 +141,9 @@ function test() {
 
 
     var url = null;
+    var selvalue=$('#select').val();
 
-
-    url = "http://localhost:8181/rcube/test/rule/execute?code=test2";
+    url = "http://localhost:8181/rcube/test/rule/execute?code="+selvalue;
 
 
     console.log(url);
