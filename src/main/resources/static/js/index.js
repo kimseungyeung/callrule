@@ -4,6 +4,26 @@ var editor=null;
 $(document).ready(function(){
 
 //사용자 정의함수들.
+    url = "http://localhost:8181/rcube/test/rule/getslist";
+
+
+    console.log(url);
+
+
+    $.ajax({
+        url: url,
+        type: "GET",
+        processData: false,
+        dataType: "json",
+    }).always(function () {
+
+
+    }).done(function (result) {
+       alert(result.toString());
+
+    }).fail(function () {
+        alert("실행 실패");
+    });
 
     $("#bt").click(function () {
         test();
@@ -117,7 +137,7 @@ function test() {
     var url = null;
 
 
-    url = "http://localhost:8181/rcube/test/rule/execute?target=d1e5bb99-a3a5-4c84-8f8b-4d22a7351039";
+    url = "http://localhost:8181/rcube/test/rule/execute?code=test2";
 
 
     console.log(url);
