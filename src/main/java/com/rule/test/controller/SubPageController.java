@@ -2,6 +2,7 @@ package com.rule.test.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -14,9 +15,11 @@ public class SubPageController {
         return "sub";
     }
 
-    @RequestMapping(path ="/sub2")
-    public String sub2(Model m,@RequestParam String k){
+    @PostMapping(path ="/sub2" )
+
+    public String sub2(Model m,@RequestParam String k,@RequestParam String j){
         m.addAttribute("text",k);
+        m.addAttribute("text",j);
         return "sub2";
     }
 }

@@ -18,6 +18,7 @@
 <body>
 <div>sub</div>
 <div id="maintext">${text}</div>
+<input id='input' type="text"/>
 <div><button id="pagemove" type="button" class="btn btn-primary">페이지 이동</button> </div>
 
 </body>
