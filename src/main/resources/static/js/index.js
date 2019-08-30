@@ -15,7 +15,7 @@ $(document).ready(function(){
         url: url,
         type: "GET",
         processData: false,
-        dataType: "json",
+        dataType: "text",
     }).always(function () {
 
 

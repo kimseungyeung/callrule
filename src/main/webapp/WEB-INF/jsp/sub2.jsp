@@ -19,7 +19,7 @@
 <body>
 <div>sub2</div>
 <div id="maintext2">${text}</div>
-<div><button id="pagemove2" type="button" class="btn btn-primary">페이지 이동</button> </div>
+<div><button id="pagemove2" type="button" class="btn btn-primary">페이지 고정</button> </div>
 
 </body>
 </html>
