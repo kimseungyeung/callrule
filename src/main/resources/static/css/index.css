@@ -2,19 +2,21 @@
 #editor_holder{
   width: 20%;
   background:gainsboro;
-  div {
-    text-align: left;
-    background: #00b3ee;
-    width: 100%;
-    height: 1%;
-    display: table;
-  input {
-    float: right;
-    right: 10%;
-    left: 10%;
-    height: 100%;
-  }
-  }
+
+}
+#editor_holder div {
+  text-align: left;
+  background: #00b3ee;
+  width: 100%;
+  height: 1%;
+  display: table;
+
+}
+#editor_holder input {
+  float: right;
+  right: 10%;
+  left: 10%;
+  height: 100%;
 }
 #btt{
 }

@@ -12,8 +12,8 @@
 <link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min-jsf.css"/>
 
 <html>
-<link rel="stylesheet/less" type="text/css" href="resources/css/index.less"/>
-<script  src="/webjars/less/3.8.1/less.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/css/index.css"/>
+
 
 <head>
     <title>룰 호출 페이지</title>

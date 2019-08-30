@@ -11,8 +11,8 @@
 <script type="text/javascript" src="/resources/js/sub2.js"></script>
 
 <html>
-<link rel="stylesheet/less" type="text/css" href="/resources/css/sub.less"/>
-<script  src="/webjars/less/3.8.1/less.js"></script>
+<link rel="stylesheet" type="text/css" href="/resources/css/sub.css"/>
+
 <head>
     <title>Sub2Page 입니다.</title>
 </head>
