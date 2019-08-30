@@ -51,6 +51,7 @@
     <p><div >지급항목중분류:<input id="edt_27" type="text" value=""></div></p>
 </div>
 <div id="btt"><button type="button" class="btn btn-primary" id="bt">실행</button></div>
+<button type="button" class="btn btn-primary" id="btsub" onclick="location='/sub'">페이지이동</button>
 <script type="text/javascript" src="resources/js/index.js"></script>
 <div id="result"><h1>결과:없음</h1></div>
 

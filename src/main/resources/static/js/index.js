@@ -132,7 +132,7 @@ function test() {
             "cancer":  ed24,
             "age": ed25
         }, "Pay":{
-            "subCode": ed26,
+            "subcode": ed26,
             "mainCode":ed27
         }
 
