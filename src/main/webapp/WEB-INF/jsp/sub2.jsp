@@ -8,10 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <link rel="stylesheet" href="/webjars/bootstrap/4.3.1/css/bootstrap.min-jsf.css">
 <script src="/webjars/jquery/3.4.1/jquery.js"></script>
-<script type="text/javascript" src="resources/js/sub2.js"></script>
+<script type="text/javascript" src="/resources/js/sub2.js"></script>
 
 <html>
-<link rel="stylesheet/less" type="text/css" href="resources/css/sub.less"/>
+<link rel="stylesheet/less" type="text/css" href="/resources/css/sub.less"/>
 <script  src="/webjars/less/3.8.1/less.js"></script>
 <head>
     <title>Sub2Page 입니다.</title>

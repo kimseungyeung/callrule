@@ -23,7 +23,7 @@ $(document).ready(function() {
         form.appendChild(obj);
 
         form.setAttribute('method','post');
-        form.setAttribute('action','/sub2');
+        form.setAttribute('action','/sub/sub2'); //경로 설정시 맨앞에 / 없을경우 상대경로로 콘트롤러의 경로와 맞춰진다.
         document.body.appendChild(form);
         form.submit();
         // $.post('/sub2',{k:'dsfs'},function (data) {

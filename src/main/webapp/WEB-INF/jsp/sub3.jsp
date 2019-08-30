@@ -15,7 +15,7 @@
 <body>
 <div id="titlesub">sub3</div>
 <div id="maintext3">${value}</div>
-<div><button id="pagemove3" type="button" class="btn btn-primary"">페이지 이동</button> </div>
+<div><button id="pagemove3" type="button" class="btn btn-primary">페이지 이동</button> </div>
 
 </body>
 </html>

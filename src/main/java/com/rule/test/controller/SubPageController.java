@@ -15,7 +15,7 @@ public class SubPageController {
         return "sub";
     }
 
-    @PostMapping(path ="/sub2" )
+    @PostMapping(path ="/sub/sub2" )
 
     public String sub2(Model m,@RequestParam String k,@RequestParam String j){
         m.addAttribute("text",k);
