@@ -22,4 +22,10 @@ public class SubPageController {
         m.addAttribute("text",j);
         return "sub2";
     }
+    @RequestMapping(path ="/sub3" )
+
+    public String sub3(Model m){
+        m.addAttribute("value","안녕하슈");
+        return "sub3";
+    }
 }
