@@ -40,10 +40,18 @@ public class TestController {
 
         return dd;
     }
-    @RequestMapping(path = "/test2" , method = RequestMethod.GET)
+    @RequestMapping(path = "/test2" , method = RequestMethod.POST)
     @ResponseBody
-    public String test2(@RequestParam String k) {
-        String dd=k+"입니다.";
+    public String test2(String phonnum) {
+        String dd="";
+        if(phonnum.equals("01089071519")) {
+             dd = "김승영" + "입니다.";
+        }else if(phonnum.equals("01099301510")){
+            dd = "안성수" + "입니다.";
+        }else if(phonnum.equals("01095259533")){
+            dd = "전성하" + "입니다.";
+        }
+
 
 
         return dd;
