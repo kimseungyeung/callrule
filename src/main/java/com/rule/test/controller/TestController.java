@@ -50,6 +50,8 @@ public class TestController {
             dd = "안성수" + "입니다.";
         }else if(phonnum.equals("010-9525-9533")){
             dd = "전성하" + "입니다.";
+        }else{
+            dd="등록되지 않은 사람입니다.";
         }
 
 
