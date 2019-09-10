@@ -44,11 +44,11 @@ public class TestController {
     @ResponseBody
     public String test2(String phonnum) {
         String dd="";
-        if(phonnum.equals("01089071519")) {
+        if(phonnum.equals("010-8907-1519")) {
              dd = "김승영" + "입니다.";
-        }else if(phonnum.equals("01099301510")){
+        }else if(phonnum.equals("010-9930-1510")){
             dd = "안성수" + "입니다.";
-        }else if(phonnum.equals("01095259533")){
+        }else if(phonnum.equals("010-9525-9533")){
             dd = "전성하" + "입니다.";
         }
 
