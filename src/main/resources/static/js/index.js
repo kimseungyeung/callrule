@@ -73,71 +73,92 @@ document.addEventListener("paste", function(e) {
 
 
 function test() {
-    var ed1 =parseInt($('#edt_1').val());
-    var ed2 =$('#edt_2').val();
-    var ed3 =parseInt($('#edt_3').val());
-    var ed4 =parseInt($('#edt_4').val());
-    var ed5 =$('#edt_5').val();
-    var ed6 =$('#edt_6').val();
-    var ed7 =parseInt($('#edt_7').val());
-    var ed8 =$('#edt_8').val();
-    var ed9 =$('#edt_9').val();
-    var ed10 =parseInt($('#edt_10').val());
-    var ed11 =$('#edt_11').val();
-    var ed12 =parseInt($('#edt_12').val());
-    var ed13 =$('#edt_13').val();
-    var ed14 =$('#edt_14').val();
-    var ed15 =$('#edt_15').val();
-    var ed16 =$('#edt_16').val();
-    var ed17 =$('#edt_17').val();
-    var ed18 =$('#edt_18').val();
-    var ed19 =$('#edt_19').val();
-    var ed20 =$('#edt_20').val();
-    var ed21 =$('#edt_21').val();
-    var ed22 =$('#edt_22').val();
-    var ed23 =$('#edt_23').val();
-    var ed24 =parseInt($('#edt_24').val());
-    var ed25 =parseInt($('#edt_25').val());
-    var ed26 =$('#edt_26').val();
+    // var ed1 =parseInt($('#edt_1').val());
+    // var ed2 =$('#edt_2').val();
+    // var ed3 =parseInt($('#edt_3').val());
+    // var ed4 =parseInt($('#edt_4').val());
+    // var ed5 =$('#edt_5').val();
+    // var ed6 =$('#edt_6').val();
+    // var ed7 =parseInt($('#edt_7').val());
+    // var ed8 =$('#edt_8').val();
+    // var ed9 =$('#edt_9').val();
+    // var ed10 =parseInt($('#edt_10').val());
+    // var ed11 =$('#edt_11').val();
+    // var ed12 =parseInt($('#edt_12').val());
+    // var ed13 =$('#edt_13').val();
+    // var ed14 =$('#edt_14').val();
+    // var ed15 =$('#edt_15').val();
+    // var ed16 =$('#edt_16').val();
+    // var ed17 =$('#edt_17').val();
+    // var ed18 =$('#edt_18').val();
+    // var ed19 =$('#edt_19').val();
+    // var ed20 =$('#edt_20').val();
+    // var ed21 =$('#edt_21').val();
+    // var ed22 =$('#edt_22').val();
+    // var ed23 =$('#edt_23').val();
+    // var ed24 =parseInt($('#edt_24').val());
+    // var ed25 =parseInt($('#edt_25').val());
+    // var ed26 =$('#edt_26').val();
     var ed27 =$('#edt_27').val();
+    var ed28 =$('#edt_28').val();
+    var ed29 =$('#edt_29').val();
+    var ed30 =$('#edt_30').val();
+    var ed31 =$('#edt_31').val();
+    // var options={
+    //     "Claim": {
+    //         "otherMoney2": ed1,
+    //         "country": ed2,
+    //         "otherMoney": ed3,
+    //         "my_Money": ed4,
+    //         "accddate":  ed5,
+    //         "hspStDt": ed6,
+    //         "count":  ed7,
+    //         "hspEndDt":  ed8,
+    //         "clmDt": ed9,
+    //         "money": ed10,
+    //         "ss":  ed11,
+    //         "money1y": ed12
+    //     },"Contract":{
+    //         "pgCode":ed13,
+    //         "code":  ed14,
+    //         "type":  ed15,
+    //         "sss":  ed16,
+    //         "sdff":  ed17,
+    //         "sss1":  ed18
+    //     },"Diagnosis":{
+    //         "hspCode": ed19,
+    //         "code":  ed20,
+    //         "yn":  ed21
+    //     },"Insured":{
+    //         "sss":  ed22,
+    //         "sex":  ed23,
+    //         "cancer":  ed24,
+    //         "age": ed25
+    //     }, "Pay":{
+    //         "subcode": ed26,
+    //         "mainCode":ed27
+    //     }
+    //
+    // };
+  var cc=  {"0":"a111",
+            "1":"a222",
+            "2":"a333",
+            "3":"a444",
+            "4":"a555"};
 
-    var options={
-        "Claim": {
-            "otherMoney2": ed1,
-            "country": ed2,
-            "otherMoney": ed3,
-            "my_Money": ed4,
-            "accddate":  ed5,
-            "hspStDt": ed6,
-            "count":  ed7,
-            "hspEndDt":  ed8,
-            "clmDt": ed9,
-            "money": ed10,
-            "ss":  ed11,
-            "money1y": ed12
-        },"Contract":{
-            "pgCode":ed13,
-            "code":  ed14,
-            "type":  ed15,
-            "sss":  ed16,
-            "sdff":  ed17,
-            "sss1":  ed18
-        },"Diagnosis":{
-            "hspCode": ed19,
-            "code":  ed20,
-            "yn":  ed21
-        },"Insured":{
-            "sss":  ed22,
-            "sex":  ed23,
-            "cancer":  ed24,
-            "age": ed25
-        }, "Pay":{
-            "subcode": ed26,
-            "mainCode":ed27
-        }
 
-    };
-    var json = options;
+    var option={"Data":{
+        "result":"11",
+        "codeno":parseFloat(ed27),
+            "checkd":ed28,
+            "checkdata":ed29,
+            "intno":parseInt(ed30),
+            "slist":ed31
+
+    }};
+
+
+    var json = option;
 
 
 
